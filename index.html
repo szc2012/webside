@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凌云七班出版社</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="logo/logo.svg" alt="凌云七班出版社" class="logo">
+                </a>
+            </div>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页轮播图 -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-content">
+                    <h2>欢迎来到凌云七班出版社</h2>
+                    <p>专注于优质教育资源的出版与传播</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 出版社介绍 -->
+    <section class="about-us">
+        <div class="container">
+            <h2>关于凌云七班出版社</h2>
+            <div class="about-content">
+                <p>凌云七班出版社成立于2025年，是一家专注于教育出版的专业出版社。我们致力于为广大师生提供高质量的教材、教辅和教育资源，助力教育事业的发展。</p>
+                <p>出版社拥有一支经验丰富的编辑团队，他们来自教育一线，深刻了解教学需求，能够精准把握教育改革的方向。我们始终坚持“质量第一、服务至上”的原则，不断推出符合时代要求的优质出版物。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色图书展示 -->
+    <section class="featured-books">
+        <div class="container_ywjykb2022">
+            <h2>特色图书</h2>
+            <div class="list_ywjykb2022">
+                <ul class="clearfix">
+                    <li class="fl">
+                        <img src="pdf-fille/pic1.png" alt="反薛晶晶宣言">
+                        <h4>反薛晶晶宣言</h4>
+                        <p class="book-description">一本关于校园生活的纪实文学作品</p>
+                        <p class="book-actions">
+                            <a href="#" class="btn_yd_ywjykb2022" title="阅读" onclick="openPdfPreview('1')"></a>
+                            <a href="pdf-fille/1.pdf" class="btn_xz_ywjykb2022" title="下载" target="_blank"></a>
+                        </p>
+                    </li>
+                    <li class="fl">
+                        <img src="pdf-fille/2.png" alt="鲁中国际学校法庭判决书">
+                        <h4>鲁中国际学校法庭判决书</h4>
+                        <p class="book-description">一份关于校园事件的法律文件</p>
+                        <p class="book-actions">
+                            <a href="#" class="btn_yd_ywjykb2022" title="阅读" onclick="openPdfPreview('2')"></a>
+                            <a href="pdf-fille/2.pdf" class="btn_xz_ywjykb2022" title="下载" target="_blank"></a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 样书预览模态框 -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePreview()">&times;</span>
+            <h2 id="previewTitle">样书预览</h2>
+            <div id="previewContent">
+                <!-- 预览内容将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>凌云七班出版社</h3>
+                    <p>地址：市中区中海国际社区中心位置C1片区济南市市中区泉海学校海纳楼207室</p>
+                    <p>电话：010-12345678</p>
+                    <p>邮箱：info@lingyun7.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 凌云七班出版社. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
